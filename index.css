@@ -106,10 +106,21 @@ footer {
 
     border-radius: 30px;
 }
+.oferta4{
+    border-radius: 30px;
+}
+.oferta5{
+    border-radius: 40px;
+}
 .container {
     display: flex;
     gap: 10px; /* Espaçamento opcional entre as imagens */
+    margin-left: 50px;
+    margin-right: 300px;
 }
 .container img {
     height: 300px;
+}
+h4{
+    font-size: 35px;
 }
