@@ -22,3 +22,39 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('resize', updateCarousel);
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Exibir o modal de cadastro ao carregar a página
+    const modal = document.getElementById("registrationModal");
+    modal.style.display = "block";
+
+    // Adicionar evento de submissão ao formulário de cadastro
+    const form = document.getElementById("registrationForm");
+    form.addEventListener("submit", (event) => {
+        event.preventDefault(); // Prevenir o comportamento padrão do formulário
+
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+
+        // Validar campos
+        if (name && email) {
+            alert("Cadastro realizado com sucesso!");
+            closeModal();
+        } else {
+            alert("Por favor, preencha todos os campos.");
+        }
+    });
+});
+
+function closeModal() {
+    const modal = document.getElementById("registrationModal");
+    modal.style.display = "none";
+}
+
+function addToCart(product) {
+    const cart = document.getElementById("cart");
+    const item = document.createElement("li");
+    item.textContent = product;
+    cart.appendChild(item);
+}
