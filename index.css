@@ -93,34 +93,44 @@ footer {
 .carousel-btn.next {
     right: 10px;
 }
-.oferta1{
- border-radius: 30px;
- text-align: center;
 
-}
-.oferta2{
-    border-radius: 50px;
-   
-}
-.oferta3{
-
+.oferta {
     border-radius: 30px;
-}
-.oferta4{
-    border-radius: 30px;
-}
-.oferta5{
-    border-radius: 40px;
-}
-.container {
-    display: flex;
-    gap: 10px; /* Espaçamento opcional entre as imagens */
-    margin-left: 50px;
-    margin-right: 300px;
-}
-.container img {
+    text-align: center;
     height: 300px;
+    width: 300px;
 }
-h4{
+
+.container {
+    margin: 0px 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin-bottom: 20px;
+}
+
+h4 {
     font-size: 35px;
 }
+
+#secaoOfertas {
+    display: flex;
+    flex-direction: column; /* Fazer as divs ficarem em coluna, uma em cima da outra */
+    gap: 20px; /* Espaço entre cada div */
+}
+
+@media (max-width: 1400px) {
+    .container {
+        flex-direction: column; 
+        width: 100%; 
+        margin: 0; 
+        align-items: center; 
+    }
+
+    .oferta {
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+}
+
