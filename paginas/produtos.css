@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #b4ba94;
 }
 .container {
     max-width: 800px;
     margin: auto;
-    background: white;
+    background: #b2b59e;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -50,4 +50,20 @@ body {
 .total {
     font-weight: bold;
     margin-top: 10px;
+}
+#cart {
+    margin-top: 20px;
+}
+
+#clear-cart {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#clear-cart:hover {
+    background-color: #c82333;
 }

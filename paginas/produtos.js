@@ -7,6 +7,12 @@ const products = [
 
 let cart = [];
 
+document.addEventListener('DOMContentLoaded', () => {
+    displayProducts();
+    const clearCartButton = document.getElementById('clear-cart');
+    clearCartButton.addEventListener('click', clearCart);
+});
+
 function displayProducts() {
     const productList = document.getElementById('product-list');
     products.forEach(product => {
@@ -42,5 +48,7 @@ function updateTotal() {
     document.getElementById('total-price').textContent = totalPrice.toFixed(2);
 }
 
-
-displayProducts();
+function clearCart() {
+    cart = [];
+    displayCart();
+}
