@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contatos.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contato</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Entre em contato conosco</h2>
+            <form action="enviar.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="image-container">
+                <img src="../7f950fb475174e31b40a6b5e80966d21.jpg" alt="Imagem da empresa" ">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
