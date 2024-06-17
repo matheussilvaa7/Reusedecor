@@ -12,7 +12,6 @@ header {
     text-align: center;
 }
 
-
 header h1 {
     margin: 0;
     color: #b4ba94;
@@ -115,8 +114,8 @@ h4 {
 
 #secaoOfertas {
     display: flex;
-    flex-direction: column; /* Fazer as divs ficarem em coluna, uma em cima da outra */
-    gap: 20px; /* Espaço entre cada div */
+    flex-direction: column; 
+    gap: 20px; 
 }
 
 @media (max-width: 1400px) {
@@ -134,3 +133,28 @@ h4 {
     }
 }
 
+.cookie-consent {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+.cookie-consent button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cookie-consent button:hover {
+    background-color: #45a049;
+}

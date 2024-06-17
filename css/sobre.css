@@ -6,11 +6,9 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    /* Centraliza conteúdo horizontalmente */
     align-items: center;
-    /* Centraliza conteúdo verticalmente */
     height: 100vh;
-    /* Utiliza a altura total da viewport */
+  
 }
 
 header {
@@ -67,17 +65,17 @@ footer {
     padding: 1rem;
     color: #b4ba94;
     margin-top: auto;
-    /* Mantém o footer na parte inferior */
+   
     width: 100%;
 }
 
 .img {
 
     width: 50%;
-    /* Estica a imagem para ocupar toda a largura disponível */
+   
     max-width: 50%;
-    /* Garante que a imagem não ultrapasse seu tamanho original */
+ 
     display: block;
-    /* Remove espaço extra abaixo da imagem */
+   
 
 }
